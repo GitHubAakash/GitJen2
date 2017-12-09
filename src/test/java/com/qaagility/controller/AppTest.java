@@ -1,4 +1,4 @@
-package example;
+package com.qaagility.controller;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
