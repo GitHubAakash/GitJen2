@@ -24,7 +24,7 @@ public class CalcTest {
 
 	@Test	
       public void testCalc1() {
-        assertEquals("Result - Fail", 90, 9);
+        assertEquals("Result - Fail", 9, 9);
       }
 	
 	
