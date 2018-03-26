@@ -12,7 +12,9 @@ public class Calculator {
   //method tobe implemented
   public int mul(int x, int y) {
     //Calling add methos just for fun
-    int temp=add(x,y);
+    System.out.println("Calling add for fun!"); 	
+    int temp = add(x,y);
+     System.out.println("Called add for fun!"); 	
     
     //Implementation of the method is pending
     return result;
