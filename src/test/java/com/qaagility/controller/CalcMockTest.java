@@ -30,8 +30,12 @@ public class CalcMockTest {
 	
 	@Test
 	public void testCalcMock1()  {
+	@Mock
+    	MyCalc calcMock;	
+		
         //  create mock
-        MyCalc test = mock(MyCalc.class);
+	ClassToTest test  = new ClassToTest(calcMock);	
+        // MyCalc test = mock(MyCalc.class);
 
         // define return value for method getMul()
         when(test.getMul()).thenReturn(81);
