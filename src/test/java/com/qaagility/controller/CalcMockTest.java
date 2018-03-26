@@ -13,8 +13,15 @@ import org.mockito.runners.MockitoJUnitRunner;
  
 public class CalcMockTest {
 
-	@Mock
-    	Calculator calcMock;	
+//	@Mock
+//    	Calculator calcMock;	
+	
+    private Calculator calcMock;
+
+	 @Before
+	 public void setupMock() {
+		calcMock = mock(Calculator.class);
+	    }	
 	
 	@Test
 	public void testCalcMock1()  {
