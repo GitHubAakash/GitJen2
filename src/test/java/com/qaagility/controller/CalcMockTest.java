@@ -28,8 +28,8 @@ public class CalcMockTest {
 
 	@Test
 	public void testCalcMock1()  {
-	when(calcMock.mul()).thenReturn(81);
-	assertEquals(81,calcMock.mul());
+	when(calcMock.mul(9,9)).thenReturn(81);
+	assertEquals(81,calcMock.mul(9,9));
 	}
 
 /*	
