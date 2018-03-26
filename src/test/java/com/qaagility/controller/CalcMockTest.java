@@ -18,7 +18,7 @@ public class CalcMockTest {
 	@Test
 	public void testCalcMock1()  {
 	when(calcMock.Mul()).thenReturn(81);
-	assertEquals(81,calcMock.Mul()).thenReturn(81))
+	assertEquals(81,calcMock.Mul()).thenReturn(81));
 	}
 
 /*	
