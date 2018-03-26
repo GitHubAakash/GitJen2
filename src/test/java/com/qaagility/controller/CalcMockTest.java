@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.mockito.MockitoAnnotations;
  
 public class CalcMockTest {
 
@@ -21,9 +22,10 @@ public class CalcMockTest {
 
 	 @Before
 	 public void setupMock() {
-		calcMock = mock(Calculator.class);
+		 MockitoAnnotations.initMocks(this);
+		//calcMock = mock(Calculator.class);
 	    }	
-	
+
 	@Test
 	public void testCalcMock1()  {
 	when(calcMock.Mul()).thenReturn(81);
