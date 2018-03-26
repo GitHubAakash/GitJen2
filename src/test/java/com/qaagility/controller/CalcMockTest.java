@@ -28,8 +28,11 @@ public class CalcMockTest {
 
 	@Test
 	public void testCalcMock1()  {
+	System.out.println("Stubbing mul(x,y)"); 	
 	when(calcMock.mul(9,9)).thenReturn(81);
 	assertEquals(81,calcMock.mul(9,9));
+	verify(calcMock, atLeastOnce()).add(9,9);
+        System.out.println("Verifying add method is also called atleast onece when mul method is called");	
 	}
 
 /*	
