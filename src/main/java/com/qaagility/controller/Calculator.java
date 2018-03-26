@@ -11,6 +11,9 @@ public class Calculator {
 
   //method tobe implemented
   public int mul(int x, int y) {
+    //Calling add methos just for fun
+    int temp=add(x,y);
+    
     //Implementation of the method is pending
     return result;
   
