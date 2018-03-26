@@ -16,7 +16,8 @@ public class CalcMockTest {
 //	@Mock
 //    	Calculator calcMock;	
 	
-    private Calculator calcMock;
+	@Mock
+    	private Calculator calcMock;
 
 	 @Before
 	 public void setupMock() {
