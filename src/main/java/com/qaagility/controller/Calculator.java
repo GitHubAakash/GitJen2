@@ -6,5 +6,12 @@ public class Calculator {
     return 3 + 6;
   
   }
+
+  //method tobe implemented
+  public int mul() {
+    return 0;
+  
+  }
+  
   
   }
