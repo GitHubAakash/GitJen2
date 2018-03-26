@@ -1,6 +1,7 @@
 package com.qaagility.controller;
 
 public class Calculator {
+  int result;
 
   public int add() {
     return 3 + 6;
@@ -8,8 +9,8 @@ public class Calculator {
   }
 
   //method tobe implemented
-  public int mul() {
-    return 0;
+  public int mul(int x, int y) {
+    return result;
   
   }
   
