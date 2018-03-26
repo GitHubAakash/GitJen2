@@ -10,13 +10,12 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
  
-@RunWith(MockitoJUnitRunner.class)
 public class CalcMockTest {
 
 	@Mock
     	Calculator calcMock;	
 
-	
+/*	
 	@Test
 	public void testCalcMock1()  {
 		
@@ -31,7 +30,7 @@ public class CalcMockTest {
         assertEquals(test.getMul(), 81);
 	}
 
-	
+*/	
 	@Test	
       public void testCalc() {
         assertEquals("Result", 9, 9);
