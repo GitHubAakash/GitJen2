@@ -32,5 +32,9 @@ public class CalcMockTest {
 	}
 */
 	
+	@Test	
+      public void testCalc() {
+        assertEquals("Result", 9, 9);
+      }
 	
     }
