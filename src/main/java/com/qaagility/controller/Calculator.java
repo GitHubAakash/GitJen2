@@ -4,6 +4,7 @@ public class Calculator {
   int x, y, result;
 
   public int add(int x, int y) {
+    System.out.println("The real add method is called."); 	
     result = x + y;
     return result;
   
@@ -11,6 +12,7 @@ public class Calculator {
 
   //method tobe implemented
   public int mul(int x, int y) {
+    System.out.println("The real mul method is called."); 	
     //Calling add methos just for fun
     System.out.println("Calling add for fun!"); 	
     int temp = add(x,y);
