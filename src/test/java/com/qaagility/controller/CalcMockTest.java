@@ -31,7 +31,7 @@ public class CalcMockTest {
 		//calcMock = mock(Calculator.class);
 	    }	
 
-	@Test
+/*	@Test
 	public void testCalcMock1()  {
 	System.out.println("Stubbing mul(x,y)"); 	
 	when(calcMock.mul(9,9)).thenReturn(81);
@@ -41,8 +41,8 @@ public class CalcMockTest {
 	verify(calcMock, atLeastOnce()).add(6,3);
         System.out.println("Verifying mul method is called atleast once");	
 	}
-	
-/*	@Test
+*/	
+	@Test
 	public void testCalcSpy1()  {
 	System.out.println("Spying mul(x,y)"); 	
 	when(calcSpy.mul(9,9)).thenReturn(81);
@@ -50,7 +50,7 @@ public class CalcMockTest {
 	verify(calcSpy, atLeastOnce()).add(9,9);
         System.out.println("Verifying spy add method is called atleast once");	
 	}
-*/	
+	
 
 /*	
 	@Test
