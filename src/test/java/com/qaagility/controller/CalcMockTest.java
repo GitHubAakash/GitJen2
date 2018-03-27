@@ -47,8 +47,8 @@ public class CalcMockTest {
 	System.out.println("Spying mul(x,y)"); 	
 	when(calcSpy.mul(9,9)).thenReturn(81);
 	assertEquals(81,calcSpy.mul(9,9));
-	verify(calcSpy, atLeastOnce()).add(9,9);
-        System.out.println("Verifying spy add method is called atleast once");	
+	verify(calcSpy, atLeastOnce()).mul(9,9);
+        System.out.println("Verifying spy mul method is called atleast once");	
 	}
 	
 
