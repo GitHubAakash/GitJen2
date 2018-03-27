@@ -19,6 +19,10 @@ public class CalcMockTest {
 	
 	@Mock
     	private Calculator calcMock;
+	
+	@Spy
+    	private Calculator calcSpy;
+	
 
 	 @Before
 	 public void setupMock() {
@@ -34,6 +38,16 @@ public class CalcMockTest {
 	verify(calcMock, atLeastOnce()).mul(9,9);
         System.out.println("Verifying mul method is called atleast once");	
 	}
+	
+	@Test
+	public void testCalcSpy1()  {
+	System.out.println("Spying mul(x,y)"); 	
+	when(calcSpy.mul(9,9)).thenReturn(81);
+	assertEquals(81,calcSpy.mul(9,9));
+	verify(calcSpy, atLeastOnce()).add(9,9);
+        System.out.println("Verifying spy add method is called atleast once");	
+	}
+	
 
 /*	
 	@Test
