@@ -35,8 +35,9 @@ public class CalcMockTest {
 	public void testCalcMock1()  {
 	System.out.println("Stubbing mul(x,y)"); 	
 	when(calcMock.mul(9,9)).thenReturn(81);
+	assertEquals(81,calcMock.mul(9,9));		
 	when(calcMock.mul(6,3)).thenCallRealMethod();	
-	assertEquals(81,calcMock.mul(9,9));
+	assertEquals(18,calcMock.mul(6,3));		
 	verify(calcMock, atLeastOnce()).add(6,3);
         System.out.println("Verifying mul method is called atleast once");	
 	}
