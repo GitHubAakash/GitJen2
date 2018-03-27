@@ -35,12 +35,13 @@ public class CalcMockTest {
 	public void testCalcMock1()  {
 	System.out.println("Stubbing mul(x,y)"); 	
 	when(calcMock.mul(9,9)).thenReturn(81);
+	when(calcMock.mul(6,3)).thenCallRealMethod();	
 	assertEquals(81,calcMock.mul(9,9));
-	verify(calcMock, atLeastOnce()).mul(9,9);
+	verify(calcMock, atLeastOnce()).add(6,3);
         System.out.println("Verifying mul method is called atleast once");	
 	}
 	
-	@Test
+/*	@Test
 	public void testCalcSpy1()  {
 	System.out.println("Spying mul(x,y)"); 	
 	when(calcSpy.mul(9,9)).thenReturn(81);
@@ -48,7 +49,7 @@ public class CalcMockTest {
 	verify(calcSpy, atLeastOnce()).add(9,9);
         System.out.println("Verifying spy add method is called atleast once");	
 	}
-	
+*/	
 
 /*	
 	@Test
