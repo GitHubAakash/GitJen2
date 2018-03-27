@@ -37,10 +37,11 @@ public class CalcMockTest {
 	when(calcMock.mul(9,9)).thenReturn(81);
 	assertEquals(81,calcMock.mul(9,9));		
 	verify(calcMock, atLeastOnce()).mul(9,9);	
+        System.out.println("Verifying mock mul method is called atleast once");			
 	when(calcMock.add(6,3)).thenCallRealMethod();	
 	assertEquals(9,calcMock.add(6,3));		
 	verify(calcMock, atLeastOnce()).add(6,3);
-        System.out.println("Verifying mul method is called atleast once");	
+        System.out.println("Verifying real add method is called atleast once");	
 	}
 	
 	@Test
